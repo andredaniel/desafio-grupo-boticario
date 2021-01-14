@@ -5,6 +5,7 @@ import Route from './Route'
 
 const Home = lazy(() => import('../components/views/Home'))
 const Login = lazy(() => import('../components/views/Login'))
+const Logout = lazy(() => import('../components/views/Logout'))
 const Register = lazy(() => import('../components/views/Register'))
 const CreateOrder = lazy(() => import('../components/views/CreateOrder'))
 const Orders = lazy(() => import('../components/views/Orders'))
@@ -17,6 +18,7 @@ const Routes = () => (
         <Route path="/orders/create" component={CreateOrder} isPrivate exact />
         <Route path="/orders" component={Orders} isPrivate exact />
         <Route path="/login" component={Login} />
+        <Route path="/logout" component={Logout} isPrivate exact />
         <Route path="/register" component={Register} />
       </Switch>
     </Suspense>
