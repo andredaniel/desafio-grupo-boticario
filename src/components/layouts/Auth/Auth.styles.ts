@@ -2,15 +2,15 @@ import styled from 'styled-components'
 import { theme } from '../../../theme'
 
 export const AuthWrapper = styled.div`
+  align-items: center;
   background-color: ${theme.colors.primary.DARK};
   background-image: linear-gradient(
     132deg,
     ${theme.colors.primary.MAIN} 0%,
     ${theme.colors.primary.DARK} 100%
   );
-  align-items: center;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   min-height: 100vh;
   padding: 50px;
   position: relative;
@@ -26,6 +26,14 @@ export const AuthWrapper = styled.div`
     width: 100%;
     z-index: 1;
   }
+
+  hr {
+    background-color: #ccc;
+    border: none;
+    height: 1px;
+    margin: 1.5rem 0;
+    width: 100%;
+  }
 `
 
 export const AuthContent = styled.div`
@@ -35,6 +43,8 @@ export const AuthContent = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
+  position: relative;
+  z-index: 2;
 
   .head {
     margin: 2rem 0;
