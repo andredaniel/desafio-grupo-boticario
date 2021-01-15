@@ -1,7 +1,7 @@
 import * as CryptoJS from 'crypto-js'
 import React from 'react'
-import { ReactComponent as Brand } from '../../../assets/brand/logo-black.svg'
-import { Avatar } from '../../common'
+import { ReactComponent as Brand } from '../../assets/brand/logo-black.svg'
+import { Avatar } from '../../components'
 import { NavBarWrapper } from './NavBar.styles'
 
 const NavBar: React.FC = (): JSX.Element => {

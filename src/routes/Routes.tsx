@@ -1,14 +1,14 @@
 import React, { lazy, Suspense } from 'react'
 import { BrowserRouter as Router, Switch } from 'react-router-dom'
-import { Loader } from '../components/core/Loader'
+import { Loader } from '../components/Loader'
 import Route from './Route'
 
-const Home = lazy(() => import('../components/views/Home'))
-const Login = lazy(() => import('../components/views/Login'))
-const Logout = lazy(() => import('../components/views/Logout'))
-const Register = lazy(() => import('../components/views/Register'))
-const CreateOrder = lazy(() => import('../components/views/CreateOrder'))
-const Orders = lazy(() => import('../components/views/Orders'))
+const Home = lazy(() => import('../pages/Home'))
+const Login = lazy(() => import('../pages/Login'))
+const Logout = lazy(() => import('../pages/Logout'))
+const Register = lazy(() => import('../pages/Register'))
+const CreateOrder = lazy(() => import('../pages/CreateOrder'))
+const Orders = lazy(() => import('../pages/Orders'))
 
 const Routes = () => (
   <Router>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactComponent as Brand } from '../../../assets/brand/logo-black.svg'
+import { ReactComponent as Brand } from '../../assets/brand/logo-black.svg'
 import { AuthContent, AuthCover, AuthWrapper, Card } from './Auth.styles'
 
 const Auth: React.FC = ({ children }): JSX.Element => {

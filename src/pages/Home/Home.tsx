@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactComponent as Illustration } from '../../../assets/images/jewelry.svg'
+import { ReactComponent as Illustration } from '../../assets/images/jewelry.svg'
 import { Panel } from '../../layouts/Panel'
 import { Card, Flex, HomeWrapper, IllustrationWrapper } from './Home.styles'
 

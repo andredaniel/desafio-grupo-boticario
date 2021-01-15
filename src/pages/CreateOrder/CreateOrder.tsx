@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Input } from '../../common'
+import { Button, Input } from '../../components'
 import { Panel } from '../../layouts/Panel'
 
 const CreateOrder: React.FC = (): JSX.Element => {

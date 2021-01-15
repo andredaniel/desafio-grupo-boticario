@@ -1,6 +1,6 @@
 import React from 'react'
-import { AppBar } from '../../core/AppBar'
-import { NavBar } from '../../core/NavBar'
+import { AppBar } from '../../containers/AppBar'
+import { NavBar } from '../../containers/NavBar'
 import { AppContent, PanelWrapper } from './Panel.styles'
 
 const Panel: React.FC = ({ children }): JSX.Element => {

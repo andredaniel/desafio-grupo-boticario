@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Input } from '../../common'
+import { Button, Input } from '../../components'
 import { Auth } from '../../layouts/Auth'
 
 const Login: React.FC = (): JSX.Element => {
