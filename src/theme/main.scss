@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
@@ -8,6 +10,7 @@ html {
 
 body {
   background-color: #f2f5fa;
+  color: 	#181819;
   font-size: 16px;
   margin: 0;
   padding: 0;
