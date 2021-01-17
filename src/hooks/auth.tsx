@@ -1,7 +1,4 @@
-enum ELocalStorage {
-  TOKEN = '@boticario:token',
-  USER = '@boticario:user',
-}
+import { ELocalStorage } from "../types/user.interface"
 
 const isAuthenticated = (): boolean => {
   const token: string | null = localStorage.getItem(ELocalStorage.TOKEN)

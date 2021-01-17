@@ -1,14 +1,30 @@
-interface IUser {
+import { IStatus } from './status.interface'
+
+export interface IOrder {
+  cashbackAppliedPercentage: number
+  cashbackReceivedValue: number
+  code: string
+  date: number
+  id: number
+  status: IStatus
+  value: number
+}
+
+export interface IUser {
+  cpf: string
+  email: string
   id: string
   name: string
-  email: string
-  cpf: string
+  orders: IOrder[]
   password: string
 }
 
-interface IAuth {
+export interface IAuth {
   token: string
   user: IUser
 }
 
-export type { IUser, IAuth }
+export enum ELocalStorage {
+  TOKEN = '@boticario:token',
+  USER = '@boticario:user',
+}
