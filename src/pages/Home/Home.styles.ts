@@ -31,7 +31,7 @@ export const IllustrationWrapper = styled.div`
   }
 `
 
-export const Card = styled.div`
+export const StyledCard = styled.div`
   color: ${theme.colors.info.CONTRAST};
   line-height: 1.5em;
   margin: 0.5rem 0;

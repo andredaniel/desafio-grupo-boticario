@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Card } from '../../components'
 import { theme } from '../../theme'
 
 export const AuthWrapper = styled.div`
@@ -14,7 +15,7 @@ export const AuthWrapper = styled.div`
   min-height: 100vh;
   padding: 50px 20px;
   position: relative;
-  
+
   @media (min-width: 768px) {
     padding: 50px;
   }
@@ -82,9 +83,7 @@ export const AuthCover = styled.div`
   width: 100%;
 `
 
-export const Card = styled.div`
-  background-color: #fff;
-  border-radius: 10px;
+export const StyledCard = styled(Card)`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 200px 3fr;
@@ -93,7 +92,7 @@ export const Card = styled.div`
   overflow: hidden;
   width: 100%;
   order: 1;
-  
+
   @media (min-width: 768px) {
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 1fr;
