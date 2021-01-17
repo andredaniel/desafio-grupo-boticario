@@ -37,7 +37,7 @@ const AppBar: React.FC = ({ children }): JSX.Element => {
         <ListItem
           to="/orders/create"
           icon={<FiPlusSquare />}
-          label="Cadastrar compra"
+          label="Nova compra"
           exact
         />
         <ListItem

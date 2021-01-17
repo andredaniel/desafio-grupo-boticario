@@ -54,7 +54,7 @@ export const ListItem = styled.div`
     display: flex;
     flex-direction: column;
     font-size: 0.75rem;
-    padding: 15px 10px;
+    padding: 15px 5px;
     position: relative;
     text-decoration: none;
     transition: color 200ms ease;
