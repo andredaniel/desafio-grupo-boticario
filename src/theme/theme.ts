@@ -34,10 +34,10 @@ enum ColorDanger {
 }
 
 enum ColorSecondary {
-  DARK = '#333333',
-  MAIN = '#777777',
-  LIGHT = '#cccccc',
-  CONTRAST = '#ffffff',
+  DARK = '#181819',
+  MAIN = '#606264',
+  LIGHT = '#a9abaf',
+  CONTRAST = '#f2f5fa',
 }
 
 const colors = {
