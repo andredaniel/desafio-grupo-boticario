@@ -12,7 +12,7 @@ export const TableWrapper = styled.div`
       text-align: left;
 
       th {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
       }
     }
 
