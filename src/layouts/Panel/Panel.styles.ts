@@ -8,15 +8,18 @@ export const PanelWrapper = styled.div`
   }
 `
 
-export const AppContent = styled.div`
+export const AppContent = styled.div<{ overflow?: string }>`
   background-color: #fff;
   border-radius: 25px;
-  min-height: calc(100vh - 170px);
+  height: calc(100vh - 170px);
+  overflow-y: ${({ overflow }) => (overflow ? overflow : 'scroll')};
   padding: 30px 20px;
   position: relative;
 
   @media (min-width: 768px) {
+    height: auto;
     min-height: auto;
+    overflow: visible;
     padding: 50px;
   }
 
