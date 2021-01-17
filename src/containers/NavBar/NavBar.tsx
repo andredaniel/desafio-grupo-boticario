@@ -1,5 +1,5 @@
 import * as CryptoJS from 'crypto-js'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { ReactComponent as Brand } from '../../assets/brand/logo-black.svg'
 import { Avatar } from '../../components'
 import { NavBarWrapper } from './NavBar.styles'
@@ -9,8 +9,14 @@ const NavBar: React.FC = (): JSX.Element => {
     'andre.fervilha@gmail.com'
   )}`
 
+  const [scrollY, setScrollY] = useState(0)
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => setScrollY(window.scrollY))
+  }, [])
+
   return (
-    <NavBarWrapper>
+    <NavBarWrapper y={scrollY}>
       <div className="brand-wrapper">
         <Brand />
         <span>Cashback</span>
