@@ -3,7 +3,7 @@ import Ink from 'react-ink'
 import { Link } from 'react-router-dom'
 import { ButtonWrapper } from './Button.styles'
 
-export type VariationTypes = 'primary' | 'secondary'
+export type VariationTypes = 'primary' | 'secondary' | 'info'
 
 export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   label?: string

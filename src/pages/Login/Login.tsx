@@ -62,7 +62,7 @@ const Login: React.FC = (): JSX.Element => {
   return (
     <Auth>
       <div className="head">
-        <h1>Login</h1>
+        <h1>Login do Revendedor</h1>
       </div>
       <Formik
         validationSchema={SigninSchema}
@@ -87,11 +87,7 @@ const Login: React.FC = (): JSX.Element => {
         </Form>
       </Formik>
       <hr />
-      <Button
-        href="/register"
-        variant="secondary"
-        label="Quero ser um revendedor"
-      />
+      <Button href="/register" variant="info" label="Quero ser um revendedor" />
     </Auth>
   )
 }

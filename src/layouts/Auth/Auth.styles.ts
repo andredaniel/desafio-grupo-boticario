@@ -4,20 +4,31 @@ import { theme } from '../../theme'
 
 export const AuthWrapper = styled.div`
   align-items: center;
-  background-color: ${theme.colors.primary.DARK};
-  background-image: linear-gradient(
-    132deg,
-    ${theme.colors.primary.MAIN} 0%,
-    ${theme.colors.primary.DARK} 100%
-  );
+  background-color: #000;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   min-height: 100vh;
   padding: 50px 20px;
   position: relative;
-
+  
   @media (min-width: 768px) {
+    flex-direction: row;
     padding: 50px;
+  }
+
+  svg {
+    height: auto;
+    margin: auto 0 50px 0;
+    max-width: 200px;
+    order: 1;
+    position: relative;
+    z-index: 3;
+    
+    @media (min-width: 768px) {
+      margin: 0;
+      max-width: 300px;
+    }
   }
 
   &:after {
@@ -33,10 +44,10 @@ export const AuthWrapper = styled.div`
   }
 
   hr {
-    background-color: #ccc;
+    background-color: ${theme.colors.secondary.CONTRAST};
     border: none;
     height: 1px;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     width: 100%;
   }
 `
@@ -47,19 +58,16 @@ export const AuthContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
-  position: relative;
-  z-index: 2;
   order: 2;
-
-  .head {
-    margin: 2rem 0;
-    text-align: center;
+  padding: 2rem;
+  
+  @media (min-width: 768px) {
+    order: 1;
   }
 
-  svg {
-    height: auto;
-    max-width: 200px;
+  .head {
+    margin: 0.5rem 0 1.5rem;
+    text-align: center;
   }
 
   h1 {
@@ -77,28 +85,36 @@ export const AuthContent = styled.div`
   form {
     width: 100%;
   }
+
+  a,
+  button {
+    width: 100%;
+  }
 `
 
 export const AuthCover = styled.div`
-  background-image: url('/images/login-picture.png');
-  background-position: 60% center;
+  background-image: url('/images/pexels-brazilian-smile.jpeg');
+  background-position: center;
   background-size: cover;
   height: 100%;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
   width: 100%;
+  z-index: 1;
 `
 
 export const StyledCard = styled(Card)`
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 200px 3fr;
-  margin: 0 auto;
-  max-width: 1100px;
+  max-width: 500px;
+  order: 2;
   overflow: hidden;
+  position: relative;
   width: 100%;
-  order: 1;
+  z-index: 2;
 
   @media (min-width: 768px) {
-    grid-template-columns: 1fr minmax(450px, 1fr);
-    grid-template-rows: 1fr;
+    order: 1;
   }
 `

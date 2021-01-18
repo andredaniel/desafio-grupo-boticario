@@ -94,7 +94,7 @@ const Register: React.FC = (): JSX.Element => {
         </Form>
       </Formik>
       <hr />
-      <Button href="/login" variant="secondary" label="Já possuo uma conta" />
+      <Button href="/login" variant="info" label="Já possuo uma conta" />
     </Auth>
   )
 }
