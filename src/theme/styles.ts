@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
+  del {
+    opacity: 0.6;
+  }
 `
 
 export { GlobalStyle }

@@ -20,10 +20,11 @@ export const IllustrationWrapper = styled.div`
   bottom: -12px;
   height: auto;
   left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
-  width: 50%;
+  max-width: 250px;
   pointer-events: none;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 50%;
 
   @media (min-width: 768px) {
     bottom: -11px;

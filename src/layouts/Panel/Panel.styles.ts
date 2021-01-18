@@ -19,8 +19,10 @@ export const AppContent = styled.div<{ overflow?: string }>`
 
   @media (min-width: 768px) {
     height: auto;
+    max-height: none;
     min-height: auto;
-    overflow: visible;
+    overflow-x: auto;
+    overflow-y: hidden;
     padding: 50px;
   }
 
