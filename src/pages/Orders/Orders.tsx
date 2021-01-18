@@ -1,5 +1,4 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { FcShop } from 'react-icons/fc'
 import { FiMoreVertical } from 'react-icons/fi'
 import { Status, Table } from '../../components'
@@ -9,17 +8,7 @@ import { IOrder } from '../../types/user.interface'
 import { formatMoney } from '../../utils/money.utils'
 
 const Orders: React.FC = (): JSX.Element => {
-  const { user, orders, setOrders } = useUser()
-  const [isLoading, setIsLoading] = useState<boolean>(true)
-
-  useEffect(() => {
-    axios
-      .get(`/.netlify/functions/user/?user_id=${user.id}`)
-      .then(({ data }) => {
-        setOrders(data)
-        setIsLoading(false)
-      })
-  }, [setOrders, user.id])
+  const { orders, isLoading } = useUser()
 
   return (
     <Panel>
