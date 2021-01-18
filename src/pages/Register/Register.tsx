@@ -74,7 +74,12 @@ const Register: React.FC = (): JSX.Element => {
             placeholder="Digite seu completo"
           />
 
-          <FormikInput id="cpf" label="CPF" placeholder="Digite seu CPF" />
+          <FormikInput
+            id="cpf"
+            label="CPF"
+            placeholder="Digite seu CPF"
+            mask="999.999.999-99"
+          />
 
           <FormikInput
             id="email"
