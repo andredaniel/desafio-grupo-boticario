@@ -73,6 +73,10 @@ export const AuthContent = styled.div`
     color: #666;
     margin: 5px 0 0;
   }
+
+  form {
+    width: 100%;
+  }
 `
 
 export const AuthCover = styled.div`
@@ -94,7 +98,7 @@ export const StyledCard = styled(Card)`
   order: 1;
 
   @media (min-width: 768px) {
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr minmax(450px, 1fr);
     grid-template-rows: 1fr;
   }
 `
