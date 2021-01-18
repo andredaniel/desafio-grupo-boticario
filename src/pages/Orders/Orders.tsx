@@ -37,7 +37,13 @@ const Orders: React.FC = (): JSX.Element => {
                   <td>{order.date}</td>
                   <td>{order.cashbackAppliedPercentage}%</td>
                   <td>
-                    <strong>{formatMoney(order.cashbackReceivedValue)}</strong>
+                    <strong>
+                      {order.status === 'DISAPPROVED' ? (
+                        <del>{formatMoney(order.cashbackReceivedValue)}</del>
+                      ) : (
+                        formatMoney(order.cashbackReceivedValue)
+                      )}
+                    </strong>
                   </td>
                   <td>
                     <Status type={order.status} />
