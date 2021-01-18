@@ -17,3 +17,4 @@ const Input: React.FC<IInput> = (props): JSX.Element => {
 }
 
 export { Input }
+export type { IInput }
