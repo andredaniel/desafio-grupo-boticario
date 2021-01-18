@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo, useState } from 'react'
 import { ReactComponent as Illustration } from '../../assets/images/jewelry.svg'
 import { useUser } from '../../contexts/user.context'
 import { Panel } from '../../layouts/Panel'
@@ -13,6 +13,12 @@ import {
 
 const Home: React.FC = (): JSX.Element => {
   const { orders } = useUser()
+  const [salesMade, setSalesMade] = useState(0)
+
+  // Just a fake data
+  useMemo(() => {
+    setSalesMade(Math.floor(orders.length * 0.6))
+  }, [orders.length])
 
   return (
     <Panel overflow="visible">
@@ -35,7 +41,7 @@ const Home: React.FC = (): JSX.Element => {
             <p>Compras realizadas</p>
           </StyledCard>
           <StyledCard>
-            <h2>{Math.ceil(Math.random() * orders.length)}</h2>
+            <h2>{salesMade}</h2>
             <p>Vendas realizadas</p>
           </StyledCard>
         </Flex>
