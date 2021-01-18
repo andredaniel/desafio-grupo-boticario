@@ -17,7 +17,6 @@
     "crypto-js": "^4.0.0",
     "formik": "^2.2.6",
     "gotrue-js": "^0.9.28",
-    "node-sass": "4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
