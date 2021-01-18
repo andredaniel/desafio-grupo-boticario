@@ -1,6 +1,7 @@
 import { Form, Formik, FormikHelpers } from 'formik'
 import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import { toast } from 'react-toastify'
 import * as yup from 'yup'
 import { Button } from '../../components'
 import FormikInput from '../../containers/FormikInput'
@@ -40,7 +41,7 @@ const Login: React.FC = (): JSX.Element => {
   }
 
   const handleLoginError = (e: any) => {
-    alert(e.message)
+    toast.error(e.message)
   }
 
   const handleSubmit = async (

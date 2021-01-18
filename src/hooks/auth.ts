@@ -34,7 +34,7 @@ const signUp = async (
 
     return logged
   } catch (e) {
-    onSignupError()
+    onSignupError(e)
   }
 }
 

@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { Form, Formik, FormikHelpers } from 'formik'
 import React from 'react'
+import { toast } from 'react-toastify'
 import * as yup from 'yup'
 import { Button } from '../../components'
 import FormikInput from '../../containers/FormikInput'
@@ -30,7 +31,7 @@ const CreateOrder: React.FC = (): JSX.Element => {
   const handleOrderSuccess = () => {}
 
   const handleOrderError = (e: any) => {
-    alert(e.message)
+    toast.error(e.message)
   }
 
   const createOrder = async (

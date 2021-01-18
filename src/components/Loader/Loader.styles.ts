@@ -6,7 +6,7 @@ export const LoaderWrapper = styled.div`
   height: 100%;
   position: fixed;
   width: 100%;
-  z-index: 9999;
+  z-index: 1010;
 
   @keyframes rotating {
     from {
