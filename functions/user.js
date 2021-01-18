@@ -9,7 +9,6 @@ const randomStatus = () => {
 }
 
 exports.handler = async function (event, context) {
-  console.log(event)
   const baseUrl = 'https://5fffb468cb21e10017af7e99.mockapi.io/api'
 
   if (event.httpMethod === 'GET') {
