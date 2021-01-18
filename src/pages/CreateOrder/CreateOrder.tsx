@@ -9,9 +9,9 @@ import { useUser } from '../../contexts/user.context'
 import { Panel } from '../../layouts/Panel'
 
 let OrderSchema = yup.object().shape({
-  code: yup.string().required('O campo é obrigatório'),
-  value: yup.number().required('O campo é obrigatório'),
-  date: yup.date().required('O campo é obrigatório'),
+  code: yup.string().required('O código é obrigatório'),
+  value: yup.string().required('O valor é obrigatório'),
+  date: yup.string().required('A data é obrigatória'),
 })
 
 interface FormValuesOrder {
@@ -28,7 +28,9 @@ const initialValues = {
 
 const CreateOrder: React.FC = (): JSX.Element => {
   const { user } = useUser()
-  const handleOrderSuccess = () => {}
+  const handleOrderSuccess = () => {
+    toast.success('Seu pedido de compra foi registrado')
+  }
 
   const handleOrderError = (e: any) => {
     toast.error(e.message)
@@ -73,8 +75,18 @@ const CreateOrder: React.FC = (): JSX.Element => {
             label="Código"
             placeholder="Código da compra"
           />
-          <FormikInput id="value" label="Valor" placeholder="Valor da compra" />
-          <FormikInput id="date" label="Data" placeholder="Data da compra" />
+          <FormikInput
+            id="value"
+            label="Valor"
+            placeholder="Valor da compra"
+            mask="R$ 999,99"
+          />
+          <FormikInput
+            id="date"
+            label="Data"
+            placeholder="Data da compra"
+            mask="99/99/9999"
+          />
           <Button variant="primary" label="Cadastrar compra" type="submit" />
         </Form>
       </Formik>

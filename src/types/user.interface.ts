@@ -6,7 +6,7 @@ export interface IOrder {
   code: string
   date: number
   id: number
-  status: IStatus
+  status: string
   value: number
 }
 
