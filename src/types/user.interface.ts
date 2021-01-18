@@ -23,8 +23,3 @@ export interface IAuth {
   token: string
   user: IUser
 }
-
-export enum ELocalStorage {
-  TOKEN = '@boticario:token',
-  USER = '@boticario:user',
-}
