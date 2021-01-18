@@ -1,11 +1,19 @@
 import React from 'react'
-import { Redirect } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
+import { Loader } from '../../components/Loader'
+import { useUser } from '../../contexts/user.context'
 import { logout } from '../../hooks/auth'
 
 const Logout: React.FC = (): JSX.Element => {
-  logout()
+  const { setUser } = useUser()
+  const history = useHistory()
 
-  return <Redirect to="/login" />
+  setUser(null)
+  logout().then(() => {
+    history.push('/login')
+  })
+
+  return <Loader />
 }
 
 export default Logout
