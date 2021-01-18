@@ -19,19 +19,19 @@ export const StatusWrapper = styled.div<IStatus>`
 
   ${({ type }) => {
     switch (type) {
-      case StatusTypes.APPROVED:
+      case 'APPROVED':
         return css`
           background-color: ${theme.colors.success.CONTRAST};
           color: ${theme.colors.success.LIGHT};
         `
 
-      case StatusTypes.DISAPPROVED:
+      case 'DISAPPROVED':
         return css`
           background-color: ${theme.colors.danger.CONTRAST};
           color: ${theme.colors.danger.LIGHT};
         `
 
-      case StatusTypes.IN_VALIDATION:
+      case 'IN_VALIDATION':
         return css`
           background-color: ${theme.colors.info.CONTRAST}77;
           color: ${theme.colors.info.LIGHT};

@@ -3,18 +3,24 @@ import { FiClock, FiThumbsDown, FiThumbsUp } from 'react-icons/fi'
 import { IStatus, StatusTypes } from '../../types/status.interface'
 import { StatusWrapper } from './Status.styles'
 
-const Status: React.FC<IStatus> = (props): JSX.Element => {
+const statusString: any = {
+  IN_VALIDATION: 'Em validação',
+  DISAPPROVED: 'Reprovado',
+  APPROVED: 'Aprovado',
+}
+
+const Status: React.FC<IStatus | any> = (props): JSX.Element => {
   const { type } = props
 
   const Icon = (): JSX.Element => {
     switch (type) {
-      case StatusTypes.APPROVED:
+      case 'APPROVED':
         return <FiThumbsUp />
 
-      case StatusTypes.DISAPPROVED:
+      case 'DISAPPROVED':
         return <FiThumbsDown />
 
-      case StatusTypes.IN_VALIDATION:
+      case 'IN_VALIDATION':
         return <FiClock />
 
       default:
@@ -24,7 +30,7 @@ const Status: React.FC<IStatus> = (props): JSX.Element => {
 
   return (
     <StatusWrapper {...props}>
-      <Icon /> {type}
+      <Icon /> {statusString[type]}
     </StatusWrapper>
   )
 }

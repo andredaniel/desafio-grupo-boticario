@@ -5,5 +5,5 @@ export enum StatusTypes {
 }
 
 export interface IStatus {
-  type: StatusTypes
+  type: string
 }
