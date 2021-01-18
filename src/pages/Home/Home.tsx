@@ -11,14 +11,33 @@ import {
   StyledCard,
 } from './Home.styles'
 
+const filterCashback = (orders: IOrder[], status: string) => {
+  return orders
+    .filter((order: any) => order.status === status)
+    .reduce((acc: number, order: IOrder) => {
+      acc = acc + Number(order.cashbackReceivedValue)
+      return acc
+    }, 0)
+}
+
 const Home: React.FC = (): JSX.Element => {
   const { orders } = useUser()
   const [salesMade, setSalesMade] = useState(0)
+  const [availableCashback, setAvailableCashback] = useState(0)
+  const [pendingCashback, setPendingCashback] = useState(0)
 
   // Just a fake data
   useMemo(() => {
     setSalesMade(Math.floor(orders.length * 0.6))
   }, [orders.length])
+
+  useMemo(() => {
+    setAvailableCashback(filterCashback(orders, 'APPROVED'))
+  }, [orders])
+
+  useMemo(() => {
+    setPendingCashback(filterCashback(orders, 'IN_VALIDATION'))
+  }, [orders])
 
   return (
     <Panel overflow="visible">
@@ -26,15 +45,8 @@ const Home: React.FC = (): JSX.Element => {
         <h1 className="title">Meu cashback</h1>
         <Flex>
           <StyledCard>
-            <h2>
-              {formatMoney(
-                orders.reduce((acc: number, order: IOrder) => {
-                  acc = acc + Number(order.cashbackReceivedValue)
-                  return acc
-                }, 0)
-              )}
-            </h2>
-            <p>Valor em cashback</p>
+            <h2>{formatMoney(availableCashback)}</h2>
+            <p>Em análise: {formatMoney(pendingCashback)}</p>
           </StyledCard>
           <StyledCard>
             <h2>{orders.length}</h2>
