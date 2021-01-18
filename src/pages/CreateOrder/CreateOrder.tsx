@@ -51,7 +51,7 @@ const CreateOrder: React.FC = (): JSX.Element => {
     values: FormValuesOrder,
     { setSubmitting }: FormikHelpers<FormValuesOrder>
   ) => {
-    const newOrder = await createOrder(
+    await createOrder(
       { ...values, user_id: user.id },
       handleOrderSuccess,
       handleOrderError

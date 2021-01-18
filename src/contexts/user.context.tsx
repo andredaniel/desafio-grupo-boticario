@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from 'react'
 import { getCurrentUser } from '../hooks/auth'
-import { IOrder, IUser } from '../types/user.interface'
+import { IOrder } from '../types/user.interface'
 
 interface UserContextProps {
   user: any

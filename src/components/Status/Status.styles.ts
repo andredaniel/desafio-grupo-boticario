@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 import { theme } from '../../theme'
-import { IStatus, StatusTypes } from '../../types/status.interface'
+import { IStatus } from '../../types/status.interface'
 
 export const StatusWrapper = styled.div<IStatus>`
   align-items: center;

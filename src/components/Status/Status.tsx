@@ -1,6 +1,6 @@
 import React from 'react'
 import { FiClock, FiThumbsDown, FiThumbsUp } from 'react-icons/fi'
-import { IStatus, StatusTypes } from '../../types/status.interface'
+import { IStatus } from '../../types/status.interface'
 import { StatusWrapper } from './Status.styles'
 
 const statusString: any = {

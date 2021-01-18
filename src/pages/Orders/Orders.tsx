@@ -1,11 +1,10 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { FiMoreVertical } from 'react-icons/fi'
 import { FcShop } from 'react-icons/fc'
+import { FiMoreVertical } from 'react-icons/fi'
 import { Status, Table } from '../../components'
 import { useUser } from '../../contexts/user.context'
 import { Panel } from '../../layouts/Panel'
-import { StatusTypes } from '../../types/status.interface'
 import { IOrder } from '../../types/user.interface'
 import { formatMoney } from '../../utils/money.utils'
 
