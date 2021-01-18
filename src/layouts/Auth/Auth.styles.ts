@@ -9,6 +9,7 @@ export const AuthWrapper = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   padding: 50px 20px;
   position: relative;
   

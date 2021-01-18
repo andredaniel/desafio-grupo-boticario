@@ -11,15 +11,19 @@ export const Flex = styled.div`
 `
 
 export const HomeWrapper = styled.div`
-  padding-bottom: 250px;
+  @media (min-width: 768px) {
+    padding-bottom: 250px;
+  }
 `
 
 export const IllustrationWrapper = styled.div`
   bottom: -12px;
   height: auto;
-  left: calc(50% - 125px);
+  left: 50%;
+  transform: translateX(-50%);
   position: absolute;
-  width: 250px;
+  width: 50%;
+  pointer-events: none;
 
   @media (min-width: 768px) {
     bottom: -11px;

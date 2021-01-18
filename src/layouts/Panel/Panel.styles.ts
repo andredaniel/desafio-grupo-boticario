@@ -12,6 +12,7 @@ export const AppContent = styled.div<{ overflow?: string }>`
   background-color: #fff;
   border-radius: 25px;
   height: calc(100vh - 170px);
+  max-height: calc((var(--vh, 1vh) * 100) - 170px);
   overflow-y: ${({ overflow }) => (overflow ? overflow : 'scroll')};
   padding: 30px 20px;
   position: relative;

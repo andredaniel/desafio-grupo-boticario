@@ -21,7 +21,14 @@
     <title>Revendedor O Boticário</title>
   </head>
   <body>
-    <noscript>Você precisa habilitar o Javascript para utilizar este site.</noscript>
+    <noscript
+      >Você precisa habilitar o Javascript para utilizar este site.</noscript
+    >
     <div id="root"></div>
+    <script>
+      // Small hack to handle viewport height on mobile devices
+      let vh = window.innerHeight * 0.01
+      document.documentElement.style.setProperty('--vh', `${vh}px`)
+    </script>
   </body>
 </html>
