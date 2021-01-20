@@ -56,5 +56,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest-serializer-html": "^7.0.0"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "jest-serializer-html"
+    ]
   }
 }
