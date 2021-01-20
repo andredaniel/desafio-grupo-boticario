@@ -1,4 +1,3 @@
-import axios from 'axios'
 import React, { useEffect } from 'react'
 import {
   Redirect,
@@ -6,9 +5,9 @@ import {
   RouteProps as ReactDOMRouteProps,
   useHistory,
 } from 'react-router-dom'
-import { toast } from 'react-toastify'
 import { useUser } from '../contexts/user.context'
 import { isAuthenticated } from '../hooks/auth'
+import api from '../services/api'
 
 interface RouteProps extends ReactDOMRouteProps {
   isPrivate?: boolean
@@ -23,16 +22,10 @@ const Route: React.FC<RouteProps> = (props) => {
   const { user, setOrders, setIsLoading } = useUser()
   useEffect(() => {
     if (user) {
-      history.listen(() => {
-        axios
-          .get(`/.netlify/functions/user/?user_id=${user.id}`)
-          .then(({ data }) => {
-            setOrders(data)
-            setIsLoading(false)
-          })
-          .catch((error) => {
-            toast.error(error.message)
-          })
+      history.listen(async () => {
+        const { data } = await api.get(`/orders?user_id=${user.id}`)
+        setOrders(data)
+        setIsLoading(false)
       })
     }
   }, [history, setIsLoading, setOrders, user, user?.id])

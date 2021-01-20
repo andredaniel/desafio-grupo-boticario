@@ -1,4 +1,3 @@
-import axios from 'axios'
 import { Form, Formik, FormikHelpers } from 'formik'
 import React from 'react'
 import { toast } from 'react-toastify'
@@ -7,6 +6,7 @@ import { Button } from '../../components'
 import FormikInput from '../../containers/FormikInput'
 import { useUser } from '../../contexts/user.context'
 import { Panel } from '../../layouts/Panel'
+import api from '../../services/api'
 
 let OrderSchema = yup.object().shape({
   code: yup.string().required('O código é obrigatório'),
@@ -42,7 +42,7 @@ const CreateOrder: React.FC = (): JSX.Element => {
     onCreateError: Function = () => null
   ) => {
     try {
-      const { data } = await axios.post(`/.netlify/functions/user/`, values)
+      const { data } = await api.post(`/orders`, values)
       onCreateSuccess()
       return data
     } catch (e) {
