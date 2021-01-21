@@ -14,7 +14,7 @@ export const NavBarWrapper = styled.div<{ y: number }>`
   width: 100%;
   z-index: 99;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${theme.breakpoints.md}) {
     padding: 0 50px;
   }
 

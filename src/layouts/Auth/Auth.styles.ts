@@ -13,7 +13,7 @@ export const AuthWrapper = styled.div`
   padding: 50px 20px;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${theme.breakpoints.md}) {
     flex-direction: row;
     min-height: 100vh;
     padding: 50px;
@@ -27,7 +27,7 @@ export const AuthWrapper = styled.div`
     position: relative;
     z-index: 3;
 
-    @media (min-width: 768px) {
+    @media (min-width: ${theme.breakpoints.md}) {
       margin: 0;
       max-width: 300px;
     }
@@ -63,7 +63,7 @@ export const AuthContent = styled.div`
   order: 2;
   padding: 2rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${theme.breakpoints.md}) {
     order: 1;
   }
 
@@ -116,7 +116,7 @@ export const StyledCard = styled(Card)`
   width: 100%;
   z-index: 2;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${theme.breakpoints.md}) {
     order: 1;
   }
 `

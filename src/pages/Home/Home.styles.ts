@@ -5,13 +5,13 @@ export const Flex = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${theme.breakpoints.md}) {
     flex-direction: row;
   }
 `
 
 export const HomeWrapper = styled.div`
-  @media (min-width: 768px) {
+  @media (min-width: ${theme.breakpoints.md}) {
     padding-bottom: 250px;
   }
 
@@ -30,7 +30,7 @@ export const IllustrationWrapper = styled.div`
   transform: translateX(-50%);
   width: 50%;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${theme.breakpoints.md}) {
     bottom: -11px;
   }
 
@@ -49,7 +49,7 @@ export const StyledCard = styled.div`
   width: 100%;
   z-index: 1;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${theme.breakpoints.md}) {
     margin: 0 0.5rem;
     padding: 2rem;
   }

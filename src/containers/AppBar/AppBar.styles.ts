@@ -11,7 +11,7 @@ export const AppBarWrapper = styled.div`
   position: fixed;
   width: 100vw;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${theme.breakpoints.md}) {
     flex-direction: column;
     max-width: 300px;
     padding: 0 30px;
@@ -26,7 +26,7 @@ export const List = styled.div`
   justify-content: space-between;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${theme.breakpoints.md}) {
     flex-direction: column;
     grid-template-columns: 1fr;
   }
@@ -42,7 +42,7 @@ export const ListItem = styled.div`
     transition: fill 200ms ease;
     width: 1.5rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: ${theme.breakpoints.md}) {
       margin-bottom: 0;
       margin-right: 1rem;
     }
@@ -60,7 +60,7 @@ export const ListItem = styled.div`
     transition: color 200ms ease;
     z-index: 1;
 
-    @media (min-width: 768px) {
+    @media (min-width: ${theme.breakpoints.md}) {
       flex-direction: row;
       font-size: 1rem;
       padding: 10px 20px;

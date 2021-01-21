@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const PanelWrapper = styled.div`
   padding: 80px 0 30px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${theme.breakpoints.md}) {
     padding: 80px 50px 80px 300px;
   }
 `
@@ -17,7 +17,7 @@ export const AppContent = styled.div<{ overflow?: string }>`
   padding: 30px 20px;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${theme.breakpoints.md}) {
     height: auto;
     max-height: none;
     min-height: auto;
