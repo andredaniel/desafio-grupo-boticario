@@ -14,6 +14,10 @@ export const HomeWrapper = styled.div`
   @media (min-width: 768px) {
     padding-bottom: 250px;
   }
+
+  span.react-loading-skeleton {
+    opacity: 0.1;
+  }
 `
 
 export const IllustrationWrapper = styled.div`

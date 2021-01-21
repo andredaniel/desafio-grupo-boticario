@@ -59,35 +59,21 @@ const Home: React.FC = (): JSX.Element => {
         <h1 className="title">Meu cashback</h1>
         <Flex>
           <StyledCard>
-            <h2>
-              {isLoading ? (
-                <Skeleton style={{ opacity: 0.1 }} />
-              ) : (
-                formatMoney(availableCashback)
-              )}
-            </h2>
+            <h2>{isLoading ? <Skeleton /> : formatMoney(availableCashback)}</h2>
             <p>
               {isLoading ? (
-                <Skeleton style={{ opacity: 0.1 }} />
+                <Skeleton />
               ) : (
                 `Em análise: ${formatMoney(pendingCashback)}`
               )}
             </p>
           </StyledCard>
           <StyledCard>
-            <h2>
-              {isLoading ? (
-                <Skeleton style={{ opacity: 0.1 }} />
-              ) : (
-                orders.length
-              )}
-            </h2>
+            <h2>{isLoading ? <Skeleton /> : orders.length}</h2>
             <p>Compras realizadas</p>
           </StyledCard>
           <StyledCard>
-            <h2>
-              {isLoading ? <Skeleton style={{ opacity: 0.1 }} /> : salesMade}
-            </h2>
+            <h2>{isLoading ? <Skeleton /> : salesMade}</h2>
             <p>Vendas realizadas</p>
           </StyledCard>
         </Flex>
