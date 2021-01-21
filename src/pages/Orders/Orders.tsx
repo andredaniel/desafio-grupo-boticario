@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { FcShop } from 'react-icons/fc'
-import { FiMoreVertical } from 'react-icons/fi'
 import { Status, Table } from '../../components'
 import { useUser } from '../../contexts/user.context'
 import { Panel } from '../../layouts/Panel'
@@ -12,6 +11,7 @@ const Orders: React.FC = (): JSX.Element => {
   const { user, setOrders, setIsLoading, orders, isLoading } = useUser()
 
   useEffect(() => {
+    setIsLoading(true)
     if (user) {
       api.get(`/orders?user_id=${user.id}`).then(({ data }) => {
         setOrders(data)
@@ -33,7 +33,6 @@ const Orders: React.FC = (): JSX.Element => {
             <th>Cashback Aplicado (%)</th>
             <th>Cashback Recebido</th>
             <th>Status</th>
-            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -59,15 +58,12 @@ const Orders: React.FC = (): JSX.Element => {
                   <td>
                     <Status type={order.status} />
                   </td>
-                  <td align="right">
-                    <FiMoreVertical />
-                  </td>
                 </tr>
               )
             })
           ) : (
             <tr style={{ textAlign: 'center' }}>
-              <td colSpan={7}>
+              <td colSpan={6}>
                 <div style={{ fontSize: 100, lineHeight: 0 }}>
                   <FcShop />
                 </div>
