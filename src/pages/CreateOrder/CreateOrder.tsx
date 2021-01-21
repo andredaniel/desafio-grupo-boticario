@@ -52,13 +52,14 @@ const CreateOrder: React.FC = (): JSX.Element => {
 
   const handleSubmit = async (
     values: FormValuesOrder,
-    { setSubmitting }: FormikHelpers<FormValuesOrder>
+    { setSubmitting, resetForm }: FormikHelpers<FormValuesOrder>
   ) => {
     await createOrder(
       { ...values, user_id: user.id },
       handleOrderSuccess,
       handleOrderError
     )
+    resetForm()
     setSubmitting(false)
   }
 
