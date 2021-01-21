@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Avatar /> should render an Avatar with image 1`] = `
+<div>
+  <img
+    class="sc-bdfBwQ ehnBFF"
+    src="//placehold.it/200/200"
+  />
+</div>
+`;
+
+exports[`<Avatar /> should render an Avatar without image 1`] = `
+<div>
+  <img
+    class="sc-bdfBwQ ehnBFF"
+  />
+</div>
+`;

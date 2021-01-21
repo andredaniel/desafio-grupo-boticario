@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Panel /> should render Panel component 1`] = `
+<div>
+  <div
+    class="sc-jrAGrp fpxUQE"
+  >
+    <div
+      class="sc-pFZIQ kNaRAc"
+      y="0"
+    >
+      <div
+        class="brand-wrapper"
+      >
+        <svg>
+          logo-black.svg
+        </svg>
+        <span>
+          Cashback
+        </span>
+      </div>
+      <div
+        class="user-info"
+      >
+        <img
+          class="sc-hKgILt dXcvOA"
+          src=""
+        />
+        <span
+          class="welcome-message"
+        >
+          Olá, 
+          !
+        </span>
+      </div>
+    </div>
+    <div
+      class="sc-bdfBwQ dAjgBn"
+    >
+      <div
+        class="sc-gsTCUz dbRFFa"
+      >
+        <div
+          class="sc-dlfnbm iZhEdz"
+        >
+          <a
+            aria-current="page"
+            class="active"
+            href="/"
+          >
+            <svg
+              fill="none"
+              height="1em"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+              />
+              <polyline
+                points="9 22 9 12 15 12 15 22"
+              />
+            </svg>
+            <span>
+              Dashboard
+            </span>
+            <canvas
+              height="0"
+              style="border-radius: inherit; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+              width="0"
+            />
+          </a>
+        </div>
+        <div
+          class="sc-dlfnbm iZhEdz"
+        >
+          <a
+            href="/orders/create"
+          >
+            <svg
+              fill="none"
+              height="1em"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                height="18"
+                rx="2"
+                ry="2"
+                width="18"
+                x="3"
+                y="3"
+              />
+              <line
+                x1="12"
+                x2="12"
+                y1="8"
+                y2="16"
+              />
+              <line
+                x1="8"
+                x2="16"
+                y1="12"
+                y2="12"
+              />
+            </svg>
+            <span>
+              Nova compra
+            </span>
+            <canvas
+              height="0"
+              style="border-radius: inherit; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+              width="0"
+            />
+          </a>
+        </div>
+        <div
+          class="sc-dlfnbm iZhEdz"
+        >
+          <a
+            href="/orders"
+          >
+            <svg
+              fill="none"
+              height="1em"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="6"
+                y2="6"
+              />
+              <path
+                d="M16 10a4 4 0 0 1-8 0"
+              />
+            </svg>
+            <span>
+              Minhas compras
+            </span>
+            <canvas
+              height="0"
+              style="border-radius: inherit; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+              width="0"
+            />
+          </a>
+        </div>
+        <div
+          class="sc-dlfnbm iZhEdz"
+        >
+          <a
+            href="/logout"
+          >
+            <svg
+              fill="none"
+              height="1em"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"
+              />
+              <polyline
+                points="16 17 21 12 16 7"
+              />
+              <line
+                x1="21"
+                x2="9"
+                y1="12"
+                y2="12"
+              />
+            </svg>
+            <span>
+              Sair
+            </span>
+            <canvas
+              height="0"
+              style="border-radius: inherit; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+              width="0"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-kEjbxe ekMXBd"
+    />
+  </div>
+</div>
+`;

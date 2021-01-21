@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> should render an Input without mask 1`] = `
+<div>
+  <div
+    class="sc-bdfBwQ jSMxIb"
+  >
+    <input
+      type="text"
+    />
+  </div>
+</div>
+`;

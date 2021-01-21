@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Table /> should render the Table component 1`] = `
+<div>
+  <div
+    class="sc-bdfBwQ hVYMEO"
+  >
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Header
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Body
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`<Table /> should render the Table component in load state 1`] = `
+<div>
+  <div
+    class="sc-bdfBwQ hVYMEO"
+  >
+    <table>
+      <thead>
+        <tr />
+      </thead>
+      <tbody>
+        <tr />
+        <tr />
+        <tr />
+        <tr />
+        <tr />
+        <tr />
+        <tr />
+        <tr />
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

@@ -104,4 +104,4 @@ const Register: React.FC = (): JSX.Element => {
   )
 }
 
-export { Register }
+export default Register

@@ -1,6 +1,6 @@
 import React, { InputHTMLAttributes } from 'react'
-import { InputWrapper } from './Input.styles'
 import InputMask from 'react-input-mask'
+import { InputWrapper } from './Input.styles'
 
 interface IInput extends InputHTMLAttributes<HTMLInputElement> {
   label?: string

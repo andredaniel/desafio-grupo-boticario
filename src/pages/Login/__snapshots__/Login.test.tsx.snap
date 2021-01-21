@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Page /> should render Page component 1`] = `
+<div>
+  <div
+    class="sc-iBPRYJ bnPPR"
+  >
+    <div
+      class="sc-dlfnbm yYWWd sc-jrAGrp fzWsks"
+    >
+      <div
+        class="sc-fubCfw fmqmna"
+      >
+        <div
+          class="head"
+        >
+          <h1>
+            Login do Revendedor
+          </h1>
+        </div>
+        <form
+          action="#"
+        >
+          <div
+            class="sc-gKsewC kBRlih"
+          >
+            <div
+              class="sc-hKgILt hJWbwG"
+            >
+              <label
+                for="email"
+              >
+                E-mail
+              </label>
+              <input
+                class=""
+                data-testid="login-email"
+                id="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+                type="email"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="sc-gKsewC kBRlih"
+          >
+            <div
+              class="sc-hKgILt hJWbwG"
+            >
+              <label
+                for="password"
+              >
+                Senha
+              </label>
+              <input
+                class=""
+                data-testid="login-password"
+                id="password"
+                name="password"
+                placeholder="Digite sua senha"
+                type="password"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="sc-gsTCUz bmkWOB"
+          >
+            <button
+              data-testid="login-button"
+              type="submit"
+            >
+              Acessar
+              <canvas
+                height="0"
+                style="border-radius: inherit; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                width="0"
+              />
+            </button>
+          </div>
+        </form>
+        <hr />
+        <a
+          href="/register"
+        >
+          <div
+            class="sc-gsTCUz eCtLwA"
+          >
+            <button
+              type="button"
+            >
+              Quero ser um revendedor
+              <canvas
+                height="0"
+                style="border-radius: inherit; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                width="0"
+              />
+            </button>
+          </div>
+        </a>
+      </div>
+    </div>
+    <svg>
+      logo-white.svg
+    </svg>
+    <div
+      class="sc-pFZIQ bYZBsb"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Page /> should render Page component 1`] = `
+<div>
+  <div
+    class="sc-iBPRYJ bnPPR"
+  >
+    <div
+      class="sc-dlfnbm yYWWd sc-jrAGrp fzWsks"
+    >
+      <div
+        class="sc-fubCfw fmqmna"
+      >
+        <div
+          class="head"
+        >
+          <h1>
+            Criar conta
+          </h1>
+        </div>
+        <form
+          action="#"
+        >
+          <div
+            class="sc-gKsewC kBRlih"
+          >
+            <div
+              class="sc-hKgILt hJWbwG"
+            >
+              <label
+                for="name"
+              >
+                Nome
+              </label>
+              <input
+                class=""
+                id="name"
+                name="name"
+                placeholder="Digite seu completo"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="sc-gKsewC kBRlih"
+          >
+            <div
+              class="sc-hKgILt hJWbwG"
+            >
+              <label
+                for="cpf"
+              >
+                CPF
+              </label>
+              <input
+                class=""
+                id="cpf"
+                name="cpf"
+                placeholder="Digite seu CPF"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="sc-gKsewC kBRlih"
+          >
+            <div
+              class="sc-hKgILt hJWbwG"
+            >
+              <label
+                for="email"
+              >
+                E-mail
+              </label>
+              <input
+                class=""
+                id="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+                type="email"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="sc-gKsewC kBRlih"
+          >
+            <div
+              class="sc-hKgILt hJWbwG"
+            >
+              <label
+                for="password"
+              >
+                Senha
+              </label>
+              <input
+                class=""
+                id="password"
+                name="password"
+                placeholder="Digite sua senha"
+                type="password"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="sc-gsTCUz bmkWOB"
+          >
+            <button
+              type="submit"
+            >
+              Criar conta
+              <canvas
+                height="0"
+                style="border-radius: inherit; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                width="0"
+              />
+            </button>
+          </div>
+        </form>
+        <hr />
+        <a
+          href="/login"
+        >
+          <div
+            class="sc-gsTCUz eCtLwA"
+          >
+            <button
+              type="button"
+            >
+              Já possuo uma conta
+              <canvas
+                height="0"
+                style="border-radius: inherit; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+                width="0"
+              />
+            </button>
+          </div>
+        </a>
+      </div>
+    </div>
+    <svg>
+      logo-white.svg
+    </svg>
+    <div
+      class="sc-pFZIQ bYZBsb"
+    />
+  </div>
+</div>
+`;

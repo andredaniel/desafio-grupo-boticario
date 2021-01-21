@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Auth /> should render Auth component properly 1`] = `
+<div>
+  <div
+    class="sc-gKsewC iELeXN"
+  >
+    <div
+      class="sc-dlfnbm yYWWd sc-pFZIQ iuJdM"
+    >
+      <div
+        class="sc-iBPRYJ cIUzNH"
+      />
+    </div>
+    <svg>
+      logo-white.svg
+    </svg>
+    <div
+      class="sc-fubCfw fmEiLQ"
+    />
+  </div>
+</div>
+`;

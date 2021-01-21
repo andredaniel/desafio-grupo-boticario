@@ -4,15 +4,16 @@ import { Input } from '../../components'
 import { IInput } from '../../components/Input/Input'
 import { FormikInputWrapper } from './FormikInput.styles'
 
-const FormikInput: React.FC<IInput> = (props): JSX.Element => {
+const FormikInput: React.FC<IInput> = ({ id, ...rest }): JSX.Element => {
   return (
-    <Field name={props.id}>
+    <Field name={id} {...rest}>
       {({ field, form: { touched, errors }, meta }: any) => (
         <FormikInputWrapper>
           <Input
+            id={id}
             className={`${meta.touched && meta.error ? 'is-invalid' : ''}`}
             {...field}
-            {...props}
+            {...rest}
           />
           {meta.touched && meta.error && (
             <div className="error">{meta.error}</div>

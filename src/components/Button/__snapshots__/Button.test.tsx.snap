@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should render a button with href 1`] = `
+<div>
+  <a
+    href="/"
+  >
+    <div
+      class="sc-bdfBwQ fYPAfR"
+    >
+      <button
+        type="button"
+      >
+        <canvas
+          height="0"
+          style="border-radius: inherit; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+          width="0"
+        />
+      </button>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`<Button /> should render a info button 1`] = `
+<div>
+  <div
+    class="sc-bdfBwQ ItcEY"
+  >
+    <button
+      type="button"
+    >
+      <canvas
+        height="0"
+        style="border-radius: inherit; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+        width="0"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Button /> should render a primary button 1`] = `
+<div>
+  <div
+    class="sc-bdfBwQ bkQapN"
+  >
+    <button
+      type="button"
+    >
+      <canvas
+        height="0"
+        style="border-radius: inherit; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+        width="0"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Button /> should render a secondary button 1`] = `
+<div>
+  <div
+    class="sc-bdfBwQ fYPAfR"
+  >
+    <button
+      type="button"
+    >
+      <canvas
+        height="0"
+        style="border-radius: inherit; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+        width="0"
+      />
+    </button>
+  </div>
+</div>
+`;

@@ -10,12 +10,12 @@ const NavBar: React.FC = (): JSX.Element => {
   const [avatarUrl, setAvatarUrl] = useState<string>('')
 
   useEffect(() => {
-    if (user.email) {
+    if (user?.email) {
       setAvatarUrl(
-        `https://www.gravatar.com/avatar/${CryptoJS.MD5(user.email)}`
+        `https://www.gravatar.com/avatar/${CryptoJS.MD5(user?.email)}`
       )
     }
-  }, [user.email])
+  }, [user?.email])
 
   const [scrollY, setScrollY] = useState(0)
 
@@ -32,7 +32,7 @@ const NavBar: React.FC = (): JSX.Element => {
       <div className="user-info">
         <Avatar src={avatarUrl} />
         <span className="welcome-message">
-          Olá, {user.user_metadata.name.split(' ')[0]}!
+          Olá, {user?.user_metadata.name.split(' ')[0]}!
         </span>
       </div>
     </NavBarWrapper>

@@ -60,7 +60,7 @@ const Login: React.FC = (): JSX.Element => {
   }, [history, user])
 
   return (
-    <Auth>
+    <Auth data-testid="login-page">
       <div className="head">
         <h1>Login do Revendedor</h1>
       </div>
@@ -74,6 +74,7 @@ const Login: React.FC = (): JSX.Element => {
             type="email"
             label="E-mail"
             placeholder="Digite seu e-mail"
+            data-testid="login-email"
           />
 
           <FormikInput
@@ -81,9 +82,10 @@ const Login: React.FC = (): JSX.Element => {
             type="password"
             label="Senha"
             placeholder="Digite sua senha"
+            data-testid="login-password"
           />
 
-          <Button variant="primary" label="Acessar" type="submit" />
+          <Button variant="primary" label="Acessar" type="submit" data-testid="login-button" />
         </Form>
       </Formik>
       <hr />
@@ -92,4 +94,4 @@ const Login: React.FC = (): JSX.Element => {
   )
 }
 
-export { Login }
+export default Login
