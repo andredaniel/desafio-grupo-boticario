@@ -21,7 +21,7 @@ let OrderSchema = yup.object().shape({
       return numberValue > 0
     })
     .required('O valor é obrigatório'),
-  date: yup.date().required('A data é obrigatória'),
+  date: yup.string().required('A data é obrigatória'),
 })
 
 interface FormValuesOrder {
