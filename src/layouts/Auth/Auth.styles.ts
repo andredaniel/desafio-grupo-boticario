@@ -12,9 +12,10 @@ export const AuthWrapper = styled.div`
   min-height: calc(var(--vh, 1vh) * 100);
   padding: 50px 20px;
   position: relative;
-  
+
   @media (min-width: 768px) {
     flex-direction: row;
+    min-height: 100vh;
     padding: 50px;
   }
 
@@ -25,7 +26,7 @@ export const AuthWrapper = styled.div`
     order: 1;
     position: relative;
     z-index: 3;
-    
+
     @media (min-width: 768px) {
       margin: 0;
       max-width: 300px;
@@ -61,7 +62,7 @@ export const AuthContent = styled.div`
   justify-content: center;
   order: 2;
   padding: 2rem;
-  
+
   @media (min-width: 768px) {
     order: 1;
   }
