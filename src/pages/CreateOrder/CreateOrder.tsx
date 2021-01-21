@@ -1,17 +1,27 @@
-import { Form, Formik, FormikHelpers } from 'formik'
-import React from 'react'
+import { Form, Formik, FormikHelpers, useFormikContext } from 'formik'
+import React, { useEffect } from 'react'
 import { toast } from 'react-toastify'
 import * as yup from 'yup'
+import { pt } from 'yup-locale-pt'
 import { Button } from '../../components'
 import FormikInput from '../../containers/FormikInput'
 import { useUser } from '../../contexts/user.context'
 import { Panel } from '../../layouts/Panel'
 import api from '../../services/api'
+import { formatMoney } from '../../utils/money.utils'
+
+yup.setLocale(pt)
 
 let OrderSchema = yup.object().shape({
   code: yup.string().required('O código é obrigatório'),
-  value: yup.string().required('O valor é obrigatório'),
-  date: yup.string().required('A data é obrigatória'),
+  value: yup
+    .string()
+    .test('Valor', 'O valor deve ser maior do que zero', (value: any) => {
+      const numberValue = Number(value.replace(/\D/g, ''))
+      return numberValue > 0
+    })
+    .required('O valor é obrigatório'),
+  date: yup.date().required('A data é obrigatória'),
 })
 
 interface FormValuesOrder {
@@ -20,47 +30,43 @@ interface FormValuesOrder {
   date: string
 }
 
-const initialValues = {
+const initialValues: FormValuesOrder = {
   code: '',
   value: '',
   date: '',
 }
 
+const FormikContext: React.FC = () => {
+  const { values, setFieldValue } = useFormikContext<FormValuesOrder>()
+  useEffect(() => {
+    const valueNumbers: number = Number(values.value.replace(/\D+/g, '')) / 100
+
+    setFieldValue('value', formatMoney(valueNumbers))
+  }, [setFieldValue, values.value])
+  return null
+}
+
 const CreateOrder: React.FC = (): JSX.Element => {
   const { user } = useUser()
-  const handleOrderSuccess = () => {
-    toast.success('Seu pedido de compra foi registrado')
-  }
-
-  const handleOrderError = (e: any) => {
-    toast.error(e.message)
-  }
-
-  const createOrder = async (
-    values: any,
-    onCreateSuccess: Function = () => null,
-    onCreateError: Function = () => null
-  ) => {
-    try {
-      const { data } = await api.post(`/orders`, values)
-      onCreateSuccess()
-      return data
-    } catch (e) {
-      onCreateError()
-    }
-  }
 
   const handleSubmit = async (
     values: FormValuesOrder,
     { setSubmitting, resetForm }: FormikHelpers<FormValuesOrder>
   ) => {
-    await createOrder(
-      { ...values, user_id: user.id },
-      handleOrderSuccess,
-      handleOrderError
-    )
-    resetForm()
-    setSubmitting(false)
+    try {
+      setSubmitting(true)
+      const { data } = await api.post(`/orders`, {
+        ...values,
+        user_id: user.id,
+      })
+      toast.success('Seu pedido de compra foi registrado')
+      return data
+    } catch (e) {
+      toast.error(e.message)
+    } finally {
+      resetForm()
+      setSubmitting(false)
+    }
   }
 
   return (
@@ -76,12 +82,7 @@ const CreateOrder: React.FC = (): JSX.Element => {
             label="Código"
             placeholder="Código da compra"
           />
-          <FormikInput
-            id="value"
-            label="Valor"
-            placeholder="Valor da compra"
-            mask="R$ 999,99"
-          />
+          <FormikInput id="value" label="Valor" placeholder="Valor da compra" />
           <FormikInput
             id="date"
             label="Data"
@@ -89,6 +90,7 @@ const CreateOrder: React.FC = (): JSX.Element => {
             mask="99/99/9999"
           />
           <Button variant="primary" label="Cadastrar compra" type="submit" />
+          <FormikContext />
         </Form>
       </Formik>
     </Panel>
