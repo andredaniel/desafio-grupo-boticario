@@ -1,7 +1,9 @@
-import React, { useMemo, useState } from 'react'
+import Skeleton from 'react-loading-skeleton'
+import React, { useEffect, useMemo, useState } from 'react'
 import { ReactComponent as Illustration } from '../../assets/images/jewelry.svg'
 import { useUser } from '../../contexts/user.context'
 import { Panel } from '../../layouts/Panel'
+import api from '../../services/api'
 import { IOrder } from '../../types/user.interface'
 import { formatMoney } from '../../utils/money.utils'
 import {
@@ -21,10 +23,22 @@ const filterCashback = (orders: IOrder[], status: string) => {
 }
 
 const Home: React.FC = (): JSX.Element => {
-  const { orders } = useUser()
+  const { user, setOrders, setIsLoading, orders, isLoading } = useUser()
   const [salesMade, setSalesMade] = useState(0)
   const [availableCashback, setAvailableCashback] = useState(0)
   const [pendingCashback, setPendingCashback] = useState(0)
+
+  useEffect(() => {
+    setIsLoading(true)
+
+    if (user) {
+      api.get(`/orders?user_id=${user.id}`).then(({ data }) => {
+        setOrders(data)
+        setIsLoading(false)
+      })
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   // Just a fake data
   useMemo(() => {
@@ -45,15 +59,35 @@ const Home: React.FC = (): JSX.Element => {
         <h1 className="title">Meu cashback</h1>
         <Flex>
           <StyledCard>
-            <h2>{formatMoney(availableCashback)}</h2>
-            <p>Em análise: {formatMoney(pendingCashback)}</p>
+            <h2>
+              {isLoading ? (
+                <Skeleton style={{ opacity: 0.1 }} />
+              ) : (
+                formatMoney(availableCashback)
+              )}
+            </h2>
+            <p>
+              {isLoading ? (
+                <Skeleton style={{ opacity: 0.1 }} />
+              ) : (
+                `Em análise: ${formatMoney(pendingCashback)}`
+              )}
+            </p>
           </StyledCard>
           <StyledCard>
-            <h2>{orders.length}</h2>
+            <h2>
+              {isLoading ? (
+                <Skeleton style={{ opacity: 0.1 }} />
+              ) : (
+                orders.length
+              )}
+            </h2>
             <p>Compras realizadas</p>
           </StyledCard>
           <StyledCard>
-            <h2>{salesMade}</h2>
+            <h2>
+              {isLoading ? <Skeleton style={{ opacity: 0.1 }} /> : salesMade}
+            </h2>
             <p>Vendas realizadas</p>
           </StyledCard>
         </Flex>

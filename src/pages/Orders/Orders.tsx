@@ -1,14 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FcShop } from 'react-icons/fc'
 import { FiMoreVertical } from 'react-icons/fi'
 import { Status, Table } from '../../components'
 import { useUser } from '../../contexts/user.context'
 import { Panel } from '../../layouts/Panel'
+import api from '../../services/api'
 import { IOrder } from '../../types/user.interface'
 import { formatMoney } from '../../utils/money.utils'
 
 const Orders: React.FC = (): JSX.Element => {
-  const { orders, isLoading } = useUser()
+  const { user, setOrders, setIsLoading, orders, isLoading } = useUser()
+
+  useEffect(() => {
+    if (user) {
+      api.get(`/orders?user_id=${user.id}`).then(({ data }) => {
+        setOrders(data)
+        setIsLoading(false)
+      })
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <Panel>
