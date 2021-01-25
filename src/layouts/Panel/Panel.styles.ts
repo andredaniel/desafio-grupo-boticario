@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { theme } from '../../theme'
 
 export const PanelWrapper = styled.div`
   padding: 80px 0 30px;
