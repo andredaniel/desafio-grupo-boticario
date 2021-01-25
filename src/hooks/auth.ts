@@ -30,9 +30,7 @@ const signUp = async (
     await auth.signup(email, password, data)
     const logged = await signIn({ email, password })
 
-    onSignupSuccess()
-
-    return logged
+    onSignupSuccess(logged)
   } catch (e) {
     onSignupError(e)
   }

@@ -5,6 +5,7 @@ import { toast } from 'react-toastify'
 import * as yup from 'yup'
 import { Button } from '../../components'
 import FormikInput from '../../containers/FormikInput'
+import { useUser } from '../../contexts/user.context'
 import { signUp } from '../../hooks/auth'
 import { Auth } from '../../layouts/Auth'
 import { IUser } from '../../types/user.interface'
@@ -35,6 +36,7 @@ const initialValues: FormValues = {
 const Register: React.FC = (): JSX.Element => {
   const [isRegistered, setIsRegistered] = useState<boolean>(false)
   const history = useHistory()
+  const { setUser } = useUser()
 
   useEffect(() => {
     if (isRegistered) {
@@ -42,7 +44,8 @@ const Register: React.FC = (): JSX.Element => {
     }
   }, [history, isRegistered])
 
-  const handleSignupSuccess = () => {
+  const handleSignupSuccess = (user: IUser) => {
+    setUser(user)
     setIsRegistered(true)
   }
 
