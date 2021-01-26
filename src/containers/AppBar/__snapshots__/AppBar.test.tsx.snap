@@ -3,13 +3,13 @@
 exports[`<AppBar /> should render AppBar component 1`] = `
 <div>
   <div
-    class="sc-bdfBwQ dAjgBn"
+    class="sc-bdfBwQ cTIOBo"
   >
     <div
-      class="sc-gsTCUz dbRFFa"
+      class="sc-gsTCUz ifxEXl"
     >
       <div
-        class="sc-dlfnbm iZhEdz"
+        class="sc-dlfnbm goBrec"
       >
         <a
           aria-current="page"
@@ -45,7 +45,7 @@ exports[`<AppBar /> should render AppBar component 1`] = `
         </a>
       </div>
       <div
-        class="sc-dlfnbm iZhEdz"
+        class="sc-dlfnbm goBrec"
       >
         <a
           href="/orders/create"
@@ -93,7 +93,7 @@ exports[`<AppBar /> should render AppBar component 1`] = `
         </a>
       </div>
       <div
-        class="sc-dlfnbm iZhEdz"
+        class="sc-dlfnbm goBrec"
       >
         <a
           href="/orders"
@@ -133,7 +133,7 @@ exports[`<AppBar /> should render AppBar component 1`] = `
         </a>
       </div>
       <div
-        class="sc-dlfnbm iZhEdz"
+        class="sc-dlfnbm goBrec"
       >
         <a
           href="/logout"

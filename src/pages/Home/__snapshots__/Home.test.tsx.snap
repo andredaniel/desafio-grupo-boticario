@@ -3,10 +3,10 @@
 exports[`<Page /> should render Page component 1`] = `
 <div>
   <div
-    class="sc-jrAGrp fpxUQE"
+    class="sc-jrAGrp iRohlz"
   >
     <div
-      class="sc-pFZIQ kNaRAc"
+      class="sc-pFZIQ fgkQxn"
       y="0"
     >
       <div
@@ -35,13 +35,13 @@ exports[`<Page /> should render Page component 1`] = `
       </div>
     </div>
     <div
-      class="sc-bdfBwQ dAjgBn"
+      class="sc-bdfBwQ cTIOBo"
     >
       <div
-        class="sc-gsTCUz dbRFFa"
+        class="sc-gsTCUz ifxEXl"
       >
         <div
-          class="sc-dlfnbm iZhEdz"
+          class="sc-dlfnbm goBrec"
         >
           <a
             aria-current="page"
@@ -77,7 +77,7 @@ exports[`<Page /> should render Page component 1`] = `
           </a>
         </div>
         <div
-          class="sc-dlfnbm iZhEdz"
+          class="sc-dlfnbm goBrec"
         >
           <a
             href="/orders/create"
@@ -125,7 +125,7 @@ exports[`<Page /> should render Page component 1`] = `
           </a>
         </div>
         <div
-          class="sc-dlfnbm iZhEdz"
+          class="sc-dlfnbm goBrec"
         >
           <a
             href="/orders"
@@ -165,7 +165,7 @@ exports[`<Page /> should render Page component 1`] = `
           </a>
         </div>
         <div
-          class="sc-dlfnbm iZhEdz"
+          class="sc-dlfnbm goBrec"
         >
           <a
             href="/logout"
@@ -207,11 +207,11 @@ exports[`<Page /> should render Page component 1`] = `
       </div>
     </div>
     <div
-      class="sc-kEjbxe kDepBa"
+      class="sc-kEjbxe dNZqFF"
       overflow="visible"
     >
       <div
-        class="sc-crrsfI fWRUcD"
+        class="sc-crrsfI kHuEwB"
       >
         <h1
           class="title"
@@ -219,34 +219,57 @@ exports[`<Page /> should render Page component 1`] = `
           Meu cashback
         </h1>
         <div
-          class="sc-iqHYGH hsfwEt"
+          class="sc-iqHYGH eWUMDe"
         >
           <div
-            class="sc-bqyKva efCAtj"
+            class="sc-bqyKva cdZllr"
           >
             <h2>
-              R$ 0.00
+              <span>
+                <span
+                  class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
             </h2>
             <p>
-              Em análise: 
-              R$ 0.00
+              <span>
+                <span
+                  class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
             </p>
           </div>
           <div
-            class="sc-bqyKva efCAtj"
+            class="sc-bqyKva cdZllr"
           >
             <h2>
-              0
+              <span>
+                <span
+                  class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
             </h2>
             <p>
               Compras realizadas
             </p>
           </div>
           <div
-            class="sc-bqyKva efCAtj"
+            class="sc-bqyKva cdZllr"
           >
             <h2>
-              0
+              <span>
+                <span
+                  class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
             </h2>
             <p>
               Vendas realizadas
@@ -254,7 +277,7 @@ exports[`<Page /> should render Page component 1`] = `
           </div>
         </div>
         <div
-          class="sc-dQppl eyNOKK"
+          class="sc-dQppl gKWfgp"
         >
           <svg>
             jewelry.svg

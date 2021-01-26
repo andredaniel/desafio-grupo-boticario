@@ -3,10 +3,10 @@
 exports[`<Panel /> should render Panel component 1`] = `
 <div>
   <div
-    class="sc-jrAGrp fpxUQE"
+    class="sc-jrAGrp iRohlz"
   >
     <div
-      class="sc-pFZIQ kNaRAc"
+      class="sc-pFZIQ fgkQxn"
       y="0"
     >
       <div
@@ -35,13 +35,13 @@ exports[`<Panel /> should render Panel component 1`] = `
       </div>
     </div>
     <div
-      class="sc-bdfBwQ dAjgBn"
+      class="sc-bdfBwQ cTIOBo"
     >
       <div
-        class="sc-gsTCUz dbRFFa"
+        class="sc-gsTCUz ifxEXl"
       >
         <div
-          class="sc-dlfnbm iZhEdz"
+          class="sc-dlfnbm goBrec"
         >
           <a
             aria-current="page"
@@ -77,7 +77,7 @@ exports[`<Panel /> should render Panel component 1`] = `
           </a>
         </div>
         <div
-          class="sc-dlfnbm iZhEdz"
+          class="sc-dlfnbm goBrec"
         >
           <a
             href="/orders/create"
@@ -125,7 +125,7 @@ exports[`<Panel /> should render Panel component 1`] = `
           </a>
         </div>
         <div
-          class="sc-dlfnbm iZhEdz"
+          class="sc-dlfnbm goBrec"
         >
           <a
             href="/orders"
@@ -165,7 +165,7 @@ exports[`<Panel /> should render Panel component 1`] = `
           </a>
         </div>
         <div
-          class="sc-dlfnbm iZhEdz"
+          class="sc-dlfnbm goBrec"
         >
           <a
             href="/logout"
@@ -207,7 +207,7 @@ exports[`<Panel /> should render Panel component 1`] = `
       </div>
     </div>
     <div
-      class="sc-kEjbxe ekMXBd"
+      class="sc-kEjbxe hCePyy"
     />
   </div>
 </div>

@@ -3,10 +3,10 @@
 exports[`<Page /> should render Page component 1`] = `
 <div>
   <div
-    class="sc-jrAGrp fpxUQE"
+    class="sc-jrAGrp iRohlz"
   >
     <div
-      class="sc-pFZIQ kNaRAc"
+      class="sc-pFZIQ fgkQxn"
       y="0"
     >
       <div
@@ -35,13 +35,13 @@ exports[`<Page /> should render Page component 1`] = `
       </div>
     </div>
     <div
-      class="sc-gKsewC iIDFxh"
+      class="sc-gKsewC emjUuq"
     >
       <div
-        class="sc-iBPRYJ dWBiVE"
+        class="sc-iBPRYJ iAOxkr"
       >
         <div
-          class="sc-fubCfw cgbqIr"
+          class="sc-fubCfw kncJps"
         >
           <a
             aria-current="page"
@@ -77,7 +77,7 @@ exports[`<Page /> should render Page component 1`] = `
           </a>
         </div>
         <div
-          class="sc-fubCfw cgbqIr"
+          class="sc-fubCfw kncJps"
         >
           <a
             href="/orders/create"
@@ -125,7 +125,7 @@ exports[`<Page /> should render Page component 1`] = `
           </a>
         </div>
         <div
-          class="sc-fubCfw cgbqIr"
+          class="sc-fubCfw kncJps"
         >
           <a
             href="/orders"
@@ -165,7 +165,7 @@ exports[`<Page /> should render Page component 1`] = `
           </a>
         </div>
         <div
-          class="sc-fubCfw cgbqIr"
+          class="sc-fubCfw kncJps"
         >
           <a
             href="/logout"
@@ -207,7 +207,7 @@ exports[`<Page /> should render Page component 1`] = `
       </div>
     </div>
     <div
-      class="sc-kEjbxe ekMXBd"
+      class="sc-kEjbxe hCePyy"
     >
       <h1
         class="title"
@@ -221,164 +221,507 @@ exports[`<Page /> should render Page component 1`] = `
           <thead>
             <tr>
               <th>
-                #
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
               </th>
               <th>
-                Valor
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
               </th>
               <th>
-                Data
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
               </th>
               <th>
-                Cashback Aplicado (%)
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
               </th>
               <th>
-                Cashback Recebido
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
               </th>
               <th>
-                Status
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
               </th>
-              <th />
             </tr>
           </thead>
           <tbody>
-            <tr
-              style="text-align: center;"
-            >
-              <td
-                colspan="7"
-              >
-                <div
-                  style="font-size: 100px; line-height: 0;"
-                >
-                  <svg
-                    enable-background="new 0 0 48 48"
-                    fill="currentColor"
-                    height="1em"
-                    stroke="currentColor"
-                    stroke-width="0"
-                    version="1"
-                    viewBox="0 0 48 48"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      fill="#CFD8DC"
-                      height="19"
-                      width="38"
-                      x="5"
-                      y="19"
-                    />
-                    <rect
-                      fill="#B0BEC5"
-                      height="4"
-                      width="38"
-                      x="5"
-                      y="38"
-                    />
-                    <rect
-                      fill="#455A64"
-                      height="18"
-                      width="12"
-                      x="27"
-                      y="24"
-                    />
-                    <rect
-                      fill="#E3F2FD"
-                      height="11"
-                      width="14"
-                      x="9"
-                      y="24"
-                    />
-                    <rect
-                      fill="#1E88E5"
-                      height="9"
-                      width="12"
-                      x="10"
-                      y="25"
-                    />
-                    <path
-                      d="M36.5,33.5c-0.3,0-0.5,0.2-0.5,0.5v2c0,0.3,0.2,0.5,0.5,0.5S37,36.3,37,36v-2C37,33.7,36.8,33.5,36.5,33.5z"
-                      fill="#90A4AE"
-                    />
-                    <g
-                      fill="#558B2F"
-                    >
-                      <circle
-                        cx="24"
-                        cy="19"
-                        r="3"
-                      />
-                      <circle
-                        cx="36"
-                        cy="19"
-                        r="3"
-                      />
-                      <circle
-                        cx="12"
-                        cy="19"
-                        r="3"
-                      />
-                    </g>
-                    <path
-                      d="M40,6H8C6.9,6,6,6.9,6,8v3h36V8C42,6.9,41.1,6,40,6z"
-                      fill="#7CB342"
-                    />
-                    <rect
-                      fill="#7CB342"
-                      height="8"
-                      width="6"
-                      x="21"
-                      y="11"
-                    />
-                    <polygon
-                      fill="#7CB342"
-                      points="37,11 32,11 33,19 39,19"
-                    />
-                    <polygon
-                      fill="#7CB342"
-                      points="11,11 16,11 15,19 9,19"
-                    />
-                    <g
-                      fill="#FFA000"
-                    >
-                      <circle
-                        cx="30"
-                        cy="19"
-                        r="3"
-                      />
-                      <path
-                        d="M45,19c0,1.7-1.3,3-3,3s-3-1.3-3-3s1.3-3,3-3L45,19z"
-                      />
-                      <circle
-                        cx="18"
-                        cy="19"
-                        r="3"
-                      />
-                      <path
-                        d="M3,19c0,1.7,1.3,3,3,3s3-1.3,3-3s-1.3-3-3-3L3,19z"
-                      />
-                    </g>
-                    <g
-                      fill="#FFC107"
-                    >
-                      <polygon
-                        points="32,11 27,11 27,19 33,19"
-                      />
-                      <polygon
-                        points="42,11 37,11 39,19 45,19"
-                      />
-                      <polygon
-                        points="16,11 21,11 21,19 15,19"
-                      />
-                      <polygon
-                        points="6,11 11,11 9,19 3,19"
-                      />
-                    </g>
-                  </svg>
-                </div>
+            <tr>
+              <td>
                 <span>
-                  Sem compras registradas, ainda.
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
+                </span>
+              </td>
+              <td>
+                <span>
+                  <span
+                    class="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+                  >
+                    ‌
+                  </span>
                 </span>
               </td>
             </tr>

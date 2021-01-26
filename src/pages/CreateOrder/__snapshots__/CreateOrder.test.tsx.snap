@@ -15,10 +15,10 @@ exports[`<Input /> should render an Input without mask 1`] = `
 exports[`<Page /> should fill the form and create a new order 1`] = `
 <div>
   <div
-    class="sc-kEjbxe iXipqX"
+    class="sc-kEjbxe ksxvHE"
   >
     <div
-      class="sc-jrAGrp ldoQrE"
+      class="sc-jrAGrp dpWuiX"
       y="0"
     >
       <div
@@ -47,13 +47,13 @@ exports[`<Page /> should fill the form and create a new order 1`] = `
       </div>
     </div>
     <div
-      class="sc-iBPRYJ jtyoTZ"
+      class="sc-iBPRYJ iIPVZi"
     >
       <div
-        class="sc-fubCfw cnDguJ"
+        class="sc-fubCfw fjlnLC"
       >
         <div
-          class="sc-pFZIQ hYJJFY"
+          class="sc-pFZIQ fIFjez"
         >
           <a
             aria-current="page"
@@ -89,7 +89,7 @@ exports[`<Page /> should fill the form and create a new order 1`] = `
           </a>
         </div>
         <div
-          class="sc-pFZIQ hYJJFY"
+          class="sc-pFZIQ fIFjez"
         >
           <a
             href="/orders/create"
@@ -137,7 +137,7 @@ exports[`<Page /> should fill the form and create a new order 1`] = `
           </a>
         </div>
         <div
-          class="sc-pFZIQ hYJJFY"
+          class="sc-pFZIQ fIFjez"
         >
           <a
             href="/orders"
@@ -177,7 +177,7 @@ exports[`<Page /> should fill the form and create a new order 1`] = `
           </a>
         </div>
         <div
-          class="sc-pFZIQ hYJJFY"
+          class="sc-pFZIQ fIFjez"
         >
           <a
             href="/logout"
@@ -219,7 +219,7 @@ exports[`<Page /> should fill the form and create a new order 1`] = `
       </div>
     </div>
     <div
-      class="sc-iqHYGH bmLHrU"
+      class="sc-iqHYGH dJIdUT"
     >
       <h1
         class="title"
@@ -267,7 +267,7 @@ exports[`<Page /> should fill the form and create a new order 1`] = `
               name="value"
               placeholder="Valor da compra"
               type="text"
-              value="R$ ___,__"
+              value="R$ 1.00"
             />
           </div>
         </div>
@@ -315,10 +315,10 @@ exports[`<Page /> should fill the form and create a new order 1`] = `
 exports[`<Page /> should render Page component 1`] = `
 <div>
   <div
-    class="sc-kEjbxe iXipqX"
+    class="sc-kEjbxe ksxvHE"
   >
     <div
-      class="sc-jrAGrp ldoQrE"
+      class="sc-jrAGrp dpWuiX"
       y="0"
     >
       <div
@@ -347,13 +347,13 @@ exports[`<Page /> should render Page component 1`] = `
       </div>
     </div>
     <div
-      class="sc-iBPRYJ jtyoTZ"
+      class="sc-iBPRYJ iIPVZi"
     >
       <div
-        class="sc-fubCfw cnDguJ"
+        class="sc-fubCfw fjlnLC"
       >
         <div
-          class="sc-pFZIQ hYJJFY"
+          class="sc-pFZIQ fIFjez"
         >
           <a
             aria-current="page"
@@ -389,7 +389,7 @@ exports[`<Page /> should render Page component 1`] = `
           </a>
         </div>
         <div
-          class="sc-pFZIQ hYJJFY"
+          class="sc-pFZIQ fIFjez"
         >
           <a
             href="/orders/create"
@@ -437,7 +437,7 @@ exports[`<Page /> should render Page component 1`] = `
           </a>
         </div>
         <div
-          class="sc-pFZIQ hYJJFY"
+          class="sc-pFZIQ fIFjez"
         >
           <a
             href="/orders"
@@ -477,7 +477,7 @@ exports[`<Page /> should render Page component 1`] = `
           </a>
         </div>
         <div
-          class="sc-pFZIQ hYJJFY"
+          class="sc-pFZIQ fIFjez"
         >
           <a
             href="/logout"
@@ -519,7 +519,7 @@ exports[`<Page /> should render Page component 1`] = `
       </div>
     </div>
     <div
-      class="sc-iqHYGH bmLHrU"
+      class="sc-iqHYGH dJIdUT"
     >
       <h1
         class="title"
@@ -567,7 +567,7 @@ exports[`<Page /> should render Page component 1`] = `
               name="value"
               placeholder="Valor da compra"
               type="text"
-              value=""
+              value="R$ 0.00"
             />
           </div>
         </div>
