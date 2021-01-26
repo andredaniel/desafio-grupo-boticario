@@ -60,6 +60,7 @@ As regras de negócio do projeto foram centralizadas na pasta `functions`, que �
 
 ### Cashback
 A função fica responsável por gerar um status aleatório para o pedido.
+
 ```js
 const  statuses  = ['APPROVED',  'DISAPPROVED',  'IN_VALIDATION'];
 
@@ -68,6 +69,8 @@ const  randomStatus  =  ()  =>  {
 	return statuses[key];
 }
 ```
+
+Da mesma forma, o valor aplicado para cashback é um número aleatório.
 
 ## Decisões de arquitetura
 O desenvolvimento de um novo produto ou funcionalidade dentro de um produto já existente geralmente exige que as entregas sejam feitas de forma eficiente para evitar altos custos que possam inviabilizar o projeto. Sendo assim, na escolha das ferramentas para o desenvolvimento de uma aplicação, é preciso considerar questões como custo de infraestrutura, curva de aprendizagem, disponibilidade de profissionais no mercado, dentre outras coisas.
