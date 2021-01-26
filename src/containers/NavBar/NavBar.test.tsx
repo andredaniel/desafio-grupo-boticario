@@ -3,7 +3,7 @@ import React from 'react'
 import { UserProvider } from '../../contexts/user.context'
 import { NavBar } from './NavBar'
 
-describe('<NavBar />', () => {
+xdescribe('<NavBar />', () => {
   it('should render NavBar component properly', () => {
     const { container } = render(
       <UserProvider>
