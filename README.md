@@ -123,3 +123,5 @@ Durante a construção da aplicação foram observadas possibilidades de melhori
  - [ ] Não utilizar tabelas pois existem melhores abordagens para exibição de lista em dispositivos móveis
  - [ ] Aplicar regras de validação de data e CPF
  - [ ] Incluir um seletor de data
+ - [ ] Melhorar a largura dos inputs nos forms em telas largas
+ - [ ] Traduzir mensagens de erro da aplicação
